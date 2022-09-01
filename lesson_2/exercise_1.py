@@ -4,4 +4,4 @@ C = "hej"
 D = True
 E = None
 
-print (f"interger value: {A}, float value: {B}, string value: {C}, boolean value: {D}, None value: {E}")
+print(f"interger value: {A}, float value: {B}, string value: {C}, boolean value: {D}, None value: {E}")
