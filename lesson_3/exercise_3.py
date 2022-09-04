@@ -1,5 +1,7 @@
-
 #exercise_3
+from audioop import reverse
+from unittest.util import sorted_list_difference
+
 
 x = True
 y = False
@@ -24,43 +26,63 @@ elif x or y or z is True:
 if x and y and z is True:
     print(False)
 
-'''
-Uppgift A
+    #exercise 4
+#1
+my_empty_list=[]
+#2
+pinkcolor = "pink"
+#3
+my_empty_list.append(pinkcolor)
+#4
+print(my_empty_list[0])
 
-1. Numeric types
-2. dict
-3. print (addresses ["Bella"])
-4. Daniel addas till dict (addresses)
-5. print(len(addresses))
-5.1 lastkey = list(addresses.keys())[-1]
-print(addresses[lastkey])
-5.2 firstkey = list(addresses.keys())[0]
-print(firstkey)
-6. List
-7. Opel
-8. IndexError: list index out of range
-9. BMV
-10. cars utökas, eftersom cars2=cars är variablernas innehål identiskt?
-10.1 cars_3 = tuple(cars)
-cars.append ("Porsche")
-print (cars)
-print (cars_3)
-10.2 reversed_cars = sorted(cars)
-merged = cars + reversed_cars
-print (merged)
-or
-reversed_cars = sorted(cars)
-cars.extend(reversed_cars)
-print (cars)
-10.3 unique_cars = set(merged)
-print(unique_cars)
-11. print(type(numbers2)) set
-12.
-13. numbers3 = numbers1.intersection(numbers2)
-print (numbers3)
-14. set_union = numbers1.union(numbers2)
-print (set_union)
-15. numbers1.symmetric_difference_update(numbers2)
-print (numbers1)
-'''
-#Uppgift B
+#5
+my_empty_list += ["red", "greem"]
+print(my_empty_list)
+#6
+print("red" in my_empty_list)
+#7
+print("yellow" not in my_empty_list)
+#8
+my_new_list = ["yellow", "black", "white"]
+my_newest_list=my_empty_list + my_new_list
+print(my_newest_list)
+#9
+my_color_list = ["red","yellow"]*3
+print(my_color_list)
+#10
+print(my_color_list[0:4])
+#11
+print(my_color_list.count("red"))
+#12
+print(my_color_list.index("yellow"))
+#13
+print(len(my_color_list))
+#14
+list_of_7_numbers = list(range(1,8))
+print(list_of_7_numbers)
+#14.1
+print(min(list_of_7_numbers))
+#14.2
+print(max(list_of_7_numbers))
+
+#exercise_5
+cars=["volvo","kia","bmw","ford", "citröen","volkswagen","mercedes", "audi","toyota","renault",]
+#5.1 and 5.3
+print(sorted(cars))
+print(sorted(cars, reverse=True))
+
+#5.2 and 5.3
+cars.sort()
+print(cars)
+cars.sort(reverse=True)
+print(cars)
+
+#5.4
+list_of_10_tuples=[("volvo","xc90"),("kia","5000"),("bmw", "m5"),("ford","mustang"),("volkswagen", "golf"),("mercedes","s-class"), ("citröen", "C7"),("audi","r8"),("toyota","supra"),("renault","zoe")]
+print(list_of_10_tuples)
+sorted_by_brand = sorted(list_of_10_tuples, key=lambda x: x[0])
+print(sorted_by_brand)
+
+sorted_by_model=sorted(list_of_10_tuples, key=lambda x:x[1])
+print(sorted_by_model)
