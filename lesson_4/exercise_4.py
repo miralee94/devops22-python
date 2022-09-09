@@ -58,8 +58,12 @@ for i in range(start,stop):
     print(i)
 
 #3 Print the sum of all integers
-sum=start+stop
-print("Sum:",sum) 
+total = 0
+for i in range(start, stop):
+    print(i)
+    total += i
+
+print(f"Sum: {total}")
 
 #Exercise 5
 

@@ -1,4 +1,5 @@
-"""#1 C=12
+#1 C=12
+"""
 A=5
 B=A
 C=A+B
@@ -54,6 +55,29 @@ y=3
 (x+y)*(x+y)
 x**2+2*x*y+y**2
 #11
+
+
+
+import math
+math.sqrt(2)
+
+katet=7
+
+hypotenusan=math.sqrt(2)*katet
+print(hypotenusan)
+
+#12
+
+timme=60
+minuter=455
+
+antal_timmar=minuter/timme
+print(antal_timmar)
+
 """
+#13
+
+
+
 
 
