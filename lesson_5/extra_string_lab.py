@@ -11,3 +11,4 @@ tal1=int(input("Skriv 1 tal: "))
 tal2=int(input("Skriv 2 tal: "))
 
 print(f"summan av tal1 och tal2 = {tal1+tal2}, differensen är {tal1-tal2}, produkten är {tal1*tal2} och kvoten är {tal1/tal2}")
+
