@@ -1,7 +1,12 @@
 # Minimal class
 
 class A:
-    pass
+    color=""
+    def __init__(self, color):
+        self.color=color
+
+    def color(self, color):
+        self.color+=color
 
 # Instantiating a Class
 # Create a object
@@ -18,7 +23,7 @@ print(a.color)
 
 # Try to use the instace variable in another instance
 a_2 = A()
-# print(a_2.color)
+print(a_2.color)
 
 # Now try to set a class variable
 A.color = 'blue'
