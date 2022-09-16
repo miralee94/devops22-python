@@ -25,11 +25,11 @@ class Team:
         self.coach = coach
 
 
-madrid = Team()
-roma = Team()
+if __name__=='__main__':
+    madrid = Team()
+    roma = Team()
 
-roma.add_player(Player("Ida Svedberg"))
-roma.switch_coach(Coach("Svennis"))
+    roma.add_player(Player("Ida Svedberg"))
+    roma.switch_coach(Coach("Svennis"))
 
-print(madrid.players)
-print(roma.players)
+    print(roma.coach())
