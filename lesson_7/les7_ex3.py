@@ -27,5 +27,12 @@ def area (b,h):
     return b*h
 
 #7. Create a function that has a list as parameter, the list should contain of values and the function returns the sum of all elements in the list.
+def sum_list(values):
+    return sum(values)
 
 #8. Create a function that repeats a word multiple time, `word` and `repeat` is used as parameters. If the word is hello and repeat is 3, it will print hello three times.
+def echo(word, repeat):
+    for r in range(repeat):
+        print(word)
+
+echo("hello", 3)
