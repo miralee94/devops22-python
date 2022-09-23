@@ -7,6 +7,7 @@ CREATE_TABLE_PERSON = '''
                     lastname TEXT,
                     timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
                 )
+                
                 '''
 
 INSERT_DATA = '''
